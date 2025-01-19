@@ -1,0 +1,173 @@
+/* Reset default margins and paddings */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/* Background and Layout */
+.Reader-1 {
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    background: #1e1e1e;
+}
+
+/* Header Section */
+.head {
+    width: 1280px;
+    max-width: 95%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    padding: 40px 0 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo .logo-text {
+    font-size: 34px;
+    font-weight: 500;
+    color: #fff;
+}
+
+nav .nav {
+    list-style-type: none;
+    font-size: 26px;
+}
+
+nav .nav li {
+    display: inline-block;
+}
+
+nav .nav li a {
+    color: #e5e5e5;
+    margin-right: 2.5rem;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav .nav li a:hover,
+nav .nav li a.active {
+    color: #0ef;
+}
+
+/* Container and Form Styles */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 5rem;
+    color: #fff;
+}
+
+.review-content {
+    max-width: 600px;
+    text-align: center;
+    background-color: #2a2a2a;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.review-content h1 {
+    font-size: 2.5rem;
+    color: #0ef;
+    margin-bottom: 1rem;
+}
+
+.review-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #e5e5e5;
+}
+
+/* Form Elements */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.form-group {
+    text-align: left;
+}
+
+label {
+    font-size: 1.2rem;
+    color: #e5e5e5;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: 2px solid #444;
+    border-radius: 5px;
+    background: #333;
+    color: #fff;
+}
+
+textarea {
+    resize: none;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: #0ef;
+}
+
+/* Button Styles */
+button {
+    padding: 0.8rem 2rem;
+    background-color: #0ef;
+    color: #081629;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    font-weight: 600;
+}
+
+button:hover {
+    background-color: #03dac6;
+    box-shadow: 0 0 5px cyan, 0 0 25px cyan, 0 0 50px cyan;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 930px) {
+    nav .nav li {
+        display: block;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    .container {
+        padding-top: 3rem;
+    }
+
+    .review-content {
+        padding: 1.5rem;
+    }
+}
